@@ -1,0 +1,44 @@
+{
+  "name": "crank-redux",
+  "version": "0.1.0-alpha.1",
+  "description": "Crank adapters for Redux",
+  "author": "Todd Lucas <tl@toddlucas.net>",
+  "license": "MIT",
+  "homepage": "https://github.com/toddlucas/crank-redux#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/toddlucas/crank-redux.git"
+  },
+  "bugs": {
+    "url": "https://github.com/toddlucas/crank-redux/issues"
+  },
+  "main": "cjs/index.js",
+  "types": "cjs/index.d.ts",
+  "files": [
+    "cjs",
+    "esm",
+    "umd",
+    "src"
+  ],
+  "scripts": {
+    "prebuild": "npm run clean",
+    "build": "npx rollup -c",
+    "clean": "shx rm -rf dist *.d.ts *.js.map",
+    "test": "jest --color --no-cache"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.14",
+    "jest": "^26.4.2",
+    "magic-string": "^0.25.7",
+    "rollup": "^2.26.11",
+    "rollup-plugin-typescript2": "^0.27.2",
+    "shx": "^0.3.2",
+    "ts-jest": "^26.3.0",
+    "ts-transform-import-path-rewrite": "^0.2.1",
+    "typescript": "^4.0.2"
+  },
+  "dependencies": {
+    "@bikeshaving/crank": "^0.3.4",
+    "redux": "^4.0.5"
+  }
+}

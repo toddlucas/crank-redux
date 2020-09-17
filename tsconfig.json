@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+      "sourceMap": true,
+      "strict": true,
+      "target": "ES2018",
+      "jsx": "react",
+      "jsxFactory": "createElement",
+      "jsxFragmentFactory": "Fragment",
+      "declaration": true,
+      "declarationDir": "./cjs",
+      "outDir": "./cjs",
+      "allowJs": true,
+      "esModuleInterop": true,
+      "moduleResolution": "Node",
+      "lib": [
+        "ES2016",
+        "ES2018",
+        "DOM",
+        "ESNext.AsyncIterable"
+      ]
+    },
+    "include": [
+      "src/**/*"
+    ],
+}
